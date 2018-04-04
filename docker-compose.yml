@@ -10,8 +10,6 @@ nginx:
         - ./nginx/default:/etc/nginx/sites-available/default
         - ./nginx/default:/etc/nginx/sites-enabled/default
         - /var/html:/var/html
-        - ./logs/nginx-error.log:/var/log/nginx/error.log
-        - ./logs/nginx-access.log:/var/log/nginx/access.log
 phpfpm:
     image: chialab/php:7.2-fpm
     restart: always
@@ -25,7 +23,7 @@ db:
     image: mariadb
     restart: always
     environment:
-        MYSQL_ROOT_PASSWORD: markdepro
+        MYSQL_ROOT_PASSWORD: rootpassword
     volumes:
         - mariadb:/var/lib/mysql
     ports:
