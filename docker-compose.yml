@@ -1,0 +1,41 @@
+nginx:
+    image: tutum/nginx
+    restart: always
+    ports:
+        - 80:80
+    links:
+        - phpfpm
+        - db
+    volumes:
+        - ./nginx/default:/etc/nginx/sites-available/default
+        - ./nginx/default:/etc/nginx/sites-enabled/default
+        - /var/html:/var/html
+        - ./logs/nginx-error.log:/var/log/nginx/error.log
+        - ./logs/nginx-access.log:/var/log/nginx/access.log
+phpfpm:
+    image: chialab/php:7.2-fpm
+    restart: always
+    ports:
+        - 9000:9000
+    links:
+        - db
+    volumes:
+        - /var/html:/var/html
+db:
+    image: mariadb
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: markdepro
+    volumes:
+        - mariadb:/var/lib/mysql
+    ports:
+        - 3306:3306
+phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    links:
+        - db
+    ports:
+        - 81:80
+    environment:
+        PMA_ARBITRARY: 0
