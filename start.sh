@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "sudo docker-compose up -d";
-sudo docker-compose up -d
+echo "docker-compose up -d";
+docker-compose up -d
 
 
