@@ -15,7 +15,7 @@ services:
             - ./logs/nginx-error.log:/var/log/nginx/error.log
             - ./logs/nginx-access.log:/var/log/nginx/access.log
     phpfpm:
-        image: chialab/php:7.2-fpm
+        build: ./php/.
         restart: always
         ports:
             - 9000:9000
@@ -32,9 +32,6 @@ services:
             - ./mariadb:/var/lib/mysql
         ports:
             - 3306:3306
-    ffmpeg:
-        image: jrottenberg/ffmpeg
-        restart: always
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         restart: always
@@ -45,5 +42,5 @@ services:
         environment:
             PMA_ARBITRARY: 0
 networks:
-    dockernet:
+    lempserver:
         external: true
