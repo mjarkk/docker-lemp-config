@@ -1,7 +1,7 @@
 # My docker lemp config
 My full docker LEMP stack (Linux, Nginx, MySQL, PHP)  
 This is a fully working lemp server with all the php extensions you might need  
-This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org/), [graphicsmagick](http://www.graphicsmagick.org/) and all a view others that a php server just needs  
+This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org/), [graphicsmagick](http://www.graphicsmagick.org/) and all a view others programs that a php server just needs  
 
 - [x] Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
 - [x] `mkdir /var/html` (this folder will contain all the webserver files)
