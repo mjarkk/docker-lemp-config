@@ -12,9 +12,7 @@ services:
             - ./nginx/default:/etc/nginx/sites-available/default
             - ./nginx/default:/etc/nginx/sites-enabled/default
             - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-            - /var/html:/var/html
-            - ./logs/nginx-error.log:/var/log/nginx/error.log
-            - ./logs/nginx-access.log:/var/log/nginx/access.log
+            - ./html:/var/html
     phpfpm:
         build: ./php/.
         restart: always
@@ -23,7 +21,7 @@ services:
         links:
             - db
         volumes:
-            - /var/html:/var/html
+            - ./html:/var/html
     db:
         image: mariadb
         restart: always

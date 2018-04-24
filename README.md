@@ -20,3 +20,4 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 
 ## BUGS
 - Can't access the SQL server via `localhost`
+- On windows mariadb fails to launch

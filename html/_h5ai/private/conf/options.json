@@ -1,0 +1,159 @@
+{
+    "passhash": "cd93feeb1f448c893b1efe8a4548e91424687be5db4822b490b2b2c5e9e2676a471783b503f92e74e17f019a34309475fccacf78cb193069f2d158250295ca87",
+    "resources": {
+        "scripts": [],
+        "styles": [
+            "//fonts.googleapis.com/css?family=Ubuntu:300,400,700%7CUbuntu+Mono:400,700"
+        ]
+    },
+    "view": {
+        "binaryPrefix": false,
+        "disableSidebar": false,
+        "fallbackMode": false,
+        "fastBrowsing": true,
+        "fonts": ["Ubuntu", "Roboto", "Helvetica", "Arial", "sans-serif"],
+        "fontsMono": ["Ubuntu Mono", "Monaco", "Lucida Sans Typewriter", "monospace"],
+        "hidden": ["^\\.", "^_h5ai"],
+        "hideFolders": false,
+        "hideIf403": true,
+        "hideParentFolder": false,
+        "maxIconSize": 40,
+        "modes": ["details", "grid", "icons"],
+        "modeToggle": false,
+        "setParentFolderLabels": true,
+        "sizes": [20, 40, 60, 80, 100, 140, 180, 220, 260, 300],
+        "theme": "comity",
+        "unmanaged": ["index.html", "index.htm", "index.php"],
+        "unmanagedInNewWindow": false
+    },
+    "autorefresh": {
+        "enabled": false,
+        "interval": 5000
+    },
+    "crumb": {
+        "enabled": true
+    },
+    "custom": {
+        "enabled": true
+    },
+    "download": {
+        "enabled": false,
+        "type": "php-tar",
+        "packageName": null,
+        "alwaysVisible": false
+    },
+    "filter": {
+        "enabled": false,
+        "advanced": true,
+        "debounceTime": 100,
+        "ignorecase": true
+    },
+    "foldersize": {
+        "enabled": false,
+        "type": "php"
+    },
+    "google-analytics-ua": {
+        "enabled": false,
+        "id": "UA-000000-0"
+    },
+    "info": {
+        "enabled": false,
+        "show": false,
+        "qrcode": true,
+        "qrFill": "#999",
+        "qrBack": "#fff"
+    },
+    "l10n": {
+        "enabled": true,
+        "lang": "en",
+        "useBrowserLang": true
+    },
+    "piwik-analytics": {
+        "enabled": false,
+        "baseURL": "some/url",
+        "idSite": 1
+    },
+    "preview-aud": {
+        "enabled": true,
+        "autoplay": true,
+        "types": ["aud"]
+    },
+    "preview-img": {
+        "enabled": true,
+        "size": false,
+        "types": ["img", "img-bmp", "img-gif", "img-ico", "img-jpg", "img-png", "img-raw", "img-svg"]
+    },
+    "preview-txt": {
+        "enabled": true,
+        "styles": {
+            "txt": 1,
+            "txt-authors": 1,
+            "txt-c": 3,
+            "txt-cpp": 3,
+            "txt-css": 3,
+            "txt-diff": 1,
+            "txt-go": 3,
+            "txt-h": 3,
+            "txt-hpp": 3,
+            "txt-install": 1,
+            "txt-js": 3,
+            "txt-json": 3,
+            "txt-less": 3,
+            "txt-license": 1,
+            "txt-log": 1,
+            "txt-makefile": 1,
+            "txt-md": 2,
+            "txt-py": 3,
+            "txt-rb": 3,
+            "txt-readme": 1,
+            "txt-rtf": 1,
+            "txt-rust": 3,
+            "txt-script": 3,
+            "txt-xml": 1
+        }
+    },
+    "preview-vid": {
+        "enabled": true,
+        "autoplay": true,
+        "types": ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"]
+    },
+    "search": {
+        "enabled": false,
+        "advanced": true,
+        "debounceTime": 300,
+        "ignorecase": true
+    },
+    "select": {
+        "enabled": false,
+        "clickndrag": true,
+        "checkboxes": true
+    },
+    "sort": {
+        "enabled": true,
+        "column": 0,
+        "reverse": false,
+        "ignorecase": true,
+        "natural": true,
+        "folders": 0
+    },
+    "thumbnails": {
+        "enabled": true,
+        "img": ["img-bmp", "img-gif", "img-ico", "img-jpg", "img-png"],
+        "mov": ["vid-avi", "vid-flv", "vid-mkv", "vid-mov", "vid-mp4", "vid-mpg", "vid-webm"],
+        "doc": ["x-pdf", "x-ps"],
+        "delay": 1,
+        "size": 240,
+        "exif": false,
+        "chunksize": 20
+    },
+    "title": {
+        "enabled": true
+    },
+    "tree": {
+        "enabled": true,
+        "show": true,
+        "maxSubfolders": 50,
+        "naturalSort": true,
+        "ignorecase": true
+    }
+}
