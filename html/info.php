@@ -9,14 +9,17 @@
     body {
       font-size: 18px;
       font-family: sans-serif;
+      padding: 20px;
+    }
+    * {
+      padding: 0px;
+      margin: 0px;
     }
   </style>
 </head>
 <body>
-  <h1>Yay the webserver works<h1>
+  <h1>Yay the webserver works</h1>
   <p>PHPmyadmin: <a href="http://localhost:81/">localhost:81</a></p>
-  <?php
-    phpinfo();
-  ?>
+  <p>Mysql IP: <b><?php echo gethostbyname("db"); ?></b> or use the hostname: <b>db</b></p>
 </body>
 </html>

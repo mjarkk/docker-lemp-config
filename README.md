@@ -8,15 +8,12 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 - [x] `docker-compose up -d` in the cloned repo (you might need to do `docker-compose build`)
 
 ## About Config
-- MySql Password: **markdepro**, username: **root**
+- MySql Password: **markdepro**, username: **root**, hostname: **db**
 - Phpmyadmin: [localhost:81](http://localhost:81)
-- Webserver root: [html](html/)
+- Webserver root: [html](html)
 
 ## Tips
-- Use `docker logs <container name>` to view log files get the container file via `docker ps`
-- To not use _h5ai remove the _h5ai folder
-- If the `docker-compose up -d` gives network errors try this: `docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 lempserver`
+- If you don't like [_h5ai](https://larsjung.de/h5ai/) remove the [_h5ai](html/_h5ai/) folder
 
 ## BUGS
-- Can't access the SQL server via `localhost`
 - On windows mariadb fails to launch

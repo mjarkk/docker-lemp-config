@@ -38,10 +38,3 @@ services:
             - 81:80
         environment:
             PMA_ARBITRARY: 0
-networks:
-    lempserver:
-        ipam: 
-            driver: bridge
-            config:
-              - subnet: 192.168.0.0/24
-              - gateway: 192.168.0.1
