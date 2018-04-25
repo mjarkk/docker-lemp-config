@@ -7,7 +7,7 @@
   <title>Info</title>
   <style>
     body {
-      font-size: 19px;
+      font-size: 18px;
       font-family: sans-serif;
     }
   </style>

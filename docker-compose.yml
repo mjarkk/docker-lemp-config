@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
     nginx:
         image: tutum/nginx
@@ -29,8 +29,6 @@ services:
             MYSQL_ROOT_PASSWORD: markdepro
         volumes:
             - ./mariadb:/var/lib/mysql
-        ports:
-            - 3306:3306
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         restart: always
@@ -42,4 +40,8 @@ services:
             PMA_ARBITRARY: 0
 networks:
     lempserver:
-        external: true
+        ipam: 
+            driver: bridge
+            config:
+              - subnet: 192.168.0.0/24
+              - gateway: 192.168.0.1

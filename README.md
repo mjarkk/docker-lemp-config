@@ -5,7 +5,6 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 
 - [x] Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
 - [x] Clone this repo
-- [x] `docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 lempserver`
 - [x] `docker-compose up -d` in the cloned repo (you might need to do `docker-compose build`)
 
 ## About Config
@@ -16,6 +15,7 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 ## Tips
 - Use `docker logs <container name>` to view log files get the container file via `docker ps`
 - To not use _h5ai remove the _h5ai folder
+- If the `docker-compose up -d` gives network errors try this: `docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 lempserver`
 
 ## BUGS
 - Can't access the SQL server via `localhost`
