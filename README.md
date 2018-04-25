@@ -10,7 +10,7 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 ## About Config
 - MySql Password: **markdepro**, username: **root**
 - Phpmyadmin: [localhost:81](http://localhost:81)
-- Webserver root: `./html`
+- Webserver root: [html](html/)
 
 ## Tips
 - Use `docker logs <container name>` to view log files get the container file via `docker ps`
