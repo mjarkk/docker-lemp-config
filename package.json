@@ -1,0 +1,16 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest ./tests/test.js"
+  },
+  "devDependencies": {
+    "jest": "^23.1.0"
+  },
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "node-fetch": "^2.1.2"
+  }
+}
