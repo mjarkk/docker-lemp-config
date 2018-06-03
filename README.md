@@ -16,4 +16,4 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 
 ## BUGS
 - This docker config will not work on windows
-- PHP scripts do sometimes not have the write to exsecute, create, remove. **Fix**: `chmod 777 html -R`
+- PHP scripts does sometimes not have the write to exsecute, create, remove. **Fix**: `chmod 777 html -R`
