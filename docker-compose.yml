@@ -16,6 +16,9 @@ services:
     phpfpm:
         build: ./php/.
         restart: always
+        links:
+            - mail
+            - db
         ports:
             - 9000:9000
         links:
@@ -25,10 +28,18 @@ services:
     db:
         image: mariadb
         restart: always
+        ports:
+            - 3306:3306
         environment:
             MYSQL_ROOT_PASSWORD: markdepro
         volumes:
             - ./mariadb:/var/lib/mysql
+    mail:
+        image: djfarrelly/maildev
+        restart: always
+        ports:
+            - 82:80
+            - 1025:25
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         restart: always
