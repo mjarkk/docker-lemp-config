@@ -10,8 +10,9 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 
 ## About Config
 - MySql Password: **markdepro**, username: **root**, hostname: **db**
-- Phpmyadmin: [localhost:81](http://localhost:81)
-- MailDev: [localhost:82](http://localhost:82)
+- Webserver: [localhost](http://localhost/)
+- Phpmyadmin: [localhost:81](http://localhost:81/)
+- MailDev: [localhost:82](http://localhost:82/)
 - Webserver root: [html](html)
 
 ## BUGS
