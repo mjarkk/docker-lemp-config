@@ -1,5 +1,5 @@
 #!/bin/bash
 
 sudo systemctl start docker
-docker-composer up
+docker-compose up
 sudo systemctl stop docker
