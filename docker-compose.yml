@@ -9,10 +9,10 @@ services:
             - phpfpm
             - db
         volumes:
-            - ./nginx/default:/etc/nginx/sites-available/default
-            - ./nginx/default:/etc/nginx/sites-enabled/default
-            - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-            - ./html:/var/html
+            - ./nginx/default:/etc/nginx/sites-available/default:z
+            - ./nginx/default:/etc/nginx/sites-enabled/default:z
+            - ./nginx/nginx.conf:/etc/nginx/nginx.conf:z
+            - ./html:/var/html:z
     phpfpm:
         build: ./php/.
         restart: always
@@ -24,7 +24,7 @@ services:
         links:
             - db
         volumes:
-            - ./html:/var/html
+            - ./html:/var/html:z
     db:
         image: mariadb
         restart: always
@@ -33,7 +33,7 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: markdepro
         volumes:
-            - ./mariadb:/var/lib/mysql
+            - ./mariadb:/var/lib/mysql:z
     mail:
         image: djfarrelly/maildev
         restart: always
