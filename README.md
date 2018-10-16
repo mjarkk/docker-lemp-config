@@ -6,7 +6,7 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 ## Install
 - Install [docker](https://docs.docker.com/install/) and [docker-compose](https://docs.docker.com/compose/install/)
 - Clone this repo and open a terminal inside the cloned folder
-- `docker-compose build && docker-compose up -d && chmod 777 html -R`
+- `docker-compose build && docker-compose up -d && chmod 775 html -R && chown $USER -R html`
 
 ## About Config
 - MySql Password: **markdepro**, username: **root**, hostname: **db**
