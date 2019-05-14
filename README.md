@@ -17,4 +17,4 @@ This also has some other programs installed like [FFMPEG](https://www.ffmpeg.org
 
 ## BUGS
 - This config will not work on windows
-- PHP scripts does sometimes not have the write to exsecute, create, remove. **Fix**: `chmod 777 html -R`
+- PHP scripts sometimes doesn't have the write to execute, create, remove, to fix it run: `chmod 777 html -R`
